@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skincare</title>
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <!--Tailwind style-->
+    <link rel="stylesheet" href="../dist/tailwind.css">
+    <!--Alpine.js-->
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+<body>
+    <!--Navigation-->
+    <nav class="px-4 py-9" x-data="{navOpen : true}">
+        <div class="container mx-auto bg-white">
+            <div class="flex items-center justify-between ">
+                <img src="../public/img/logo2.png" alt="" class="order-1 sm:order-2">
+                <img @click ="navOpen :! navOpen" src="../public/img/icon1.PNG" alt="" class="lg:hidden order-2 sm:order-1">
+                <div class="order-2 hidden lg:block">
+                    <ul class="flex gap-16">
+                        <li class=" font-normal text-sm "><a href="">Home</a></li>
+                        <li class="text-gray-500 font-normal text-sm opacity-50"><a href="">Product</a></li>
+                        <li class="text-gray-500 font-normal text-sm opacity-50"><a href="">About</a></li>
+                        <li class="text-gray-500 font-normal text-sm opacity-50"><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="order-3 hidden sm:block">
+                    <button class="bg-white grow px-8 py-4 font-bold text-gray-500 rounded-full text-sm">Login</button>
+                    <button class="bg-biru grow px-8 py-4 font-bold text-white rounded-full text-sm">Sign Up</button>
+                </div>
+
+            </div>
+        </div>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skincare</title>
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <!--Tailwind style-->
+    <link rel="stylesheet" href="../dist/tailwind.css">
+    <!--Alpine.js-->
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+<body>
+    <!--Navigation-->
+    <nav class="px-4 py-9" x-data="{navOpen : true}">
+        <div class="container mx-auto bg-white">
+            <div class="flex items-center justify-between ">
+                <img src="../public/img/logo2.png" alt="" class="order-1 sm:order-2">
+                <img @click ="navOpen :! navOpen" src="../public/img/icon1.PNG" alt="" class="lg:hidden order-2 sm:order-1">
+                <div class="order-2 hidden lg:block">
+                    <ul class="flex gap-16">
+                        <li class="text-gray-500 font-normal text-sm opacity-50"><a href="index.html">Home</a></li>
+                        <li class="text-gray-500 font-normal text-sm opacity-50"><a href="Product.html">Poduct</a></li>
+                        <li class=" font-normal text-sm "><a href="About.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="order-3 hidden sm:block">
+                    <button class="bg-white grow px-8 py-4 font-bold text-gray-500 rounded-full text-sm">Login</button>
+                    <button class="bg-biru grow px-8 py-4 font-bold text-white rounded-full text-sm">Sign Up</button>
+                </div>
+
+            </div>
+        </div>
+
+    <!-- service section-->
+    <section class="py-16 overflow-x-hidden">
+        <div class="container mx-auto px-3">
+            <div class="grid grid-cols-12 items-center">
+                <div class="lg:col-span-4 col-span-12 gap-4 flex-col ">
+                    <span class="text-pink-500 font-bold leading-tight text-center lg:text-start">About</span>
+                    <h1 class="font-bold sm:text-2xl text-3xl font-sans leading-tight text-grey">Our Top Value Categories for you</h1>
+                </div>
+                <div class="lg:col-span-8 col-span-12 flex flex-col sm:flex-row gap-5 lg:w-screen sm:w-auto lg:mt-0 sm:mt-16 mt-8">
+                    <div class="flex justify-center gap-16 flex-col items-center w-full sm:w-[350px] rounded-[32px] border lg:p-16 p-10">
+                        <div><img src="../public/img/booking 1.png" alt=""></div>
+                            <div class="flex gap-8 flex-col">
+                                <h2 class="font-bold text-grey text-lg text-center">Best Consultation</h2>
+                                <p class="font-inter text-lg leading-relaxed text-grey opacity-50 text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center gap-16 flex-col items-center w-full sm:w-[350px] rounded-[32px] border lg:p-16 p-10">
+                        <div><img src="../public/img/destination 1.png" alt=""></div>
+                            <div class="flex gap-8 flex-col">
+                                <h2 class="font-bold text-grey text-lg text-center">Best Consultation</h2>
+                                <p class="font-inter text-lg leading-relaxed text-grey opacity-50 text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center gap-16 flex-col items-center w-full sm:w-[350px] rounded-[32px] border lg:p-16 p-10">
+                        <div><img src="../public/img/cloudy 1.png" alt=""></div>
+                            <div class="flex gap-8 flex-col">
+                                <h2 class="font-bold text-grey text-lg text-center">Best Consultation</h2>
+                                <p class="font-inter text-lg leading-relaxed text-grey opacity-50 text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
